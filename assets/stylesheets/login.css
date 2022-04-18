@@ -1,0 +1,156 @@
+
+
+a.button4 {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
+    margin-left: 47%;
+}
+
+a.button4:hover {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+@media all and (max-width:30em) {
+    a.button4 {
+        display: block;
+        margin: 0.2em auto;
+    }
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+.site-logo img{
+  float: right;
+  width: 100px;
+     height: auto;
+}
+.submenu{
+
+  float: right;
+  background-color: gray;
+
+}
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    font-family: 'Arial';
+}
+.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background: #23463f;
+        border-radius: 15px ;
+
+}
+h2{
+    text-align: center;
+    color: #277582;
+    padding: 20px;
+}
+label{
+    color: #08ffd1;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+
+
+}
+span{
+    color: white;
+    font-size: 17px;
+}
+a{
+    float: right;
+    background-color: grey;
+}
+
+
+
+
+
+
+
+
+.footer {
+    position: fixed;
+    bottom: -20px;
+   list-style-type: none;
+
+  width: 100%;
+
+     background-color: #333;
+     height: 100px;
+ }
+.footer h2 {
+    color: white;
+}
+
+.footer li {
+    color: white;
+     list-style: none;
+     display: inline;
+}
+
+.footer a {
+    color: white;
+}

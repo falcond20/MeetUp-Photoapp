@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="./../assets/stylesheets/savedConnections.css" rel="stylesheet" type="text/css">
+
+<%- include ('partials/header') %>
+<body>
+
+
+  <div  class="spacer"> . </div>
+  <h2>Here is your Saved Connections   <%= %></h2>
+  <%
+    if( userConnection == 'undefined' || userConnection.length == 0 ) { %>
+      <h1>You Have no Connections Saved</h1>
+    <% } else {%>
+
+  <%= //console.log("Here before connects")%>
+  <%= //console.log(userConnection)%>
+
+
+  <% for (var i = 0; i < userConnection.length; i++) { %>
+
+<br>
+
+
+    <div class="card">
+<br>
+
+  <h2><b><%= userConnection[i].connection.connectionName %></b></h2>
+
+        <p><b><%= userConnection[i].connection.detail %></b></p>
+          <a href="/connection?connectionId=<%= userConnection[i].connection.connectionId %>"></a>
+        <br>
+        <p>Going? <%= userConnection[i].rsvp %></p>
+
+
+          <button>
+      <p>   <a href="/connection?connectionId=<%= userConnection[i].connection.connectionId %>">Update</a></p>
+          </button>
+
+            <form  method="post">
+              <input hidden  name="connectionId" value="<%= userConnection[i].connection.connectionId%>">
+              <button type="submit" class="button" value="delete" formaction="/savedConnections/delete" name="rsvp">Delete</button>
+            </form>
+
+    </div>
+      <% } %>
+<% } %>
+
+
+
+<div  class="spacer"> . </div>
+<%- include ('partials/footer') %>
+</body>
+
+</html>

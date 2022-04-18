@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="./../assets/stylesheets/connections.css" rel="stylesheet" type="text/css">
+<%- include ('partials/header') %>
+
+
+<body>
+
+    <% for (var i = 0; i < qs.connection.length; i++) { %>
+
+<div class="cardos">
+  <img src="<%= qs.connection[i].link %>" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h3><b>Category: <%= qs.connection[i].connectionTopic %></b></h4>
+    <h4><b><%= qs.connection[i].connectionName %></b></h4>
+    <p><a href="/connection?connectionId=<%= qs.connection[i].connectionId %>">
+        <%= qs.connection[i].detail %></p>
+  </div>
+</div>
+
+
+  <% } %>
+
+
+
+<%- include ('partials/footer') %>
+
+</body>
+
+</html>

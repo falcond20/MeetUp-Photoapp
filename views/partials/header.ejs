@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+    <div class="menu">
+        <ul>
+          <li><a href="/"></li>
+
+          <div class="site-logo">
+            <img src="./../assets/images/233filmsWhite.png" alt="logo">
+          </div>
+          </a>
+
+          <%
+
+
+            if( typeof theUser =='undefined') { %>
+
+          <li><a href="/connections">Connections</a></li>
+          <li><a href="/savedConnections">My Saved Connections</a></li>
+
+          <br>
+          <div class="submenu">
+            <li><a href="/savedConnections/logins"> login/SignUp</a></li>
+
+            <li><a href="/newconnection"> Start New Connection</a></li>
+          </div>
+
+            <% } else {%>
+              <li><a href="/connections">Connections</a></li>
+              <li><a href="/savedConnections">My Saved Connections</a></li>
+
+              <br>
+              <div class="submenu">
+                <li><a href="/savedConnections/signout"> Signout</a></li>
+                <li><a href="/newconnection"> Start New Connection</a></li>
+              </div>
+
+                <% } %>
+        </div>
+
+
+
+</head>

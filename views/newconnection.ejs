@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="./assets/stylesheets/index.css" rel="stylesheet" type="text/css">
+<link href="./assets/stylesheets/newconnection.css" rel="stylesheet" type="text/css">
+
+<%- include ('partials/header') %>
+<body>
+
+<form action="/connection" method="post" >
+  <h2>Create New Connection</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Topic" name="topic">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field"  type="text" placeholder="Name" name="Name">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field"style="height:200px;font-size:10pt; type="text" placeholder="Details" name="detals">
+  </div>
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field"  type="text" placeholder="Lcation" name="Location">
+  </div>
+  <input type="submit" class="btn">Create Connection</input>
+  <button type="submit" class="btn">Create Connection</button>
+</form>
+
+
+
+<%- include ('partials/footer') %>
+</body>
+
+</html>

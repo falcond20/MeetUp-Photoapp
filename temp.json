@@ -1,0 +1,67 @@
+db.connections.insert([
+        {
+            "id": "A1",
+            "band": "Red Hot Chili Peppers",
+            "genre": "Rock",
+            "details": "Get excited for the Red Hot Chili Peppers! This will be there 4th performance in Charlotte, NC and 6th stop on their 2021 tour.",
+            "location": "Charlotte Metro Credit Union Ampitheatre",
+            "when": "August 14, 2021"
+        }])
+
+
+
+ [
+{
+    "connectionId": 1,
+    "connectionName": "Photography Tutorials",
+    "connectionTopic": "Photography",
+    "detail": "Charlotte photograpehers are hosting a training sesion for new photograpehers in the city for free",
+    "location": "Zoom",
+    "host": "James Mensah",
+    "date": "27th April 2021",
+    "startTime": "5:30pm",
+    "endTime":"6:30pm",
+    "link" : "./../assets/images/233filmsWhite.png"
+  },
+
+{
+  "connectionId": 2,
+  "connectionName": "Videography Tutorials",
+  "connectionTopic": "Videography",
+  "detail" : "Charlotte Videographers are hosting a training sesion for new Videographers in the city for free",
+  "location" : "Uptown Charlotte",
+  "host": "Akua Mensah",
+  "date" : "27th May 2021",
+  "startTime":"5:30pm",
+  "endTime":"6:30pm",
+  "link" : "./../assets/images/holdingcam.jpg"
+},
+
+
+{
+  "connectionId": 3,
+  "connectionName": "Photoshop Tutorials",
+  "connectionTopic": "Photography",
+  "detail" :     "Professional Photographers are hosting a training sesion for new photograpehers in the city for free",
+  "location" : "Uptown Charlotte",
+  "host": "James Gray",
+  "date" : "30th May 2021",
+  "startTime":"6:30pm",
+  "endTime":"8:30pm",
+  "link" : "./../assets/images/photographergirl.jpg"
+},
+
+{
+  "connectionId": 4,
+  "connectionName": "Photographers Meetup",
+  "connectionTopic": "Photography",
+  "detail" : "Meetup for Photographers in Charlotte",
+  "location" : "Downtown",
+  "host": "Shatta Wale",
+  "date" : "27th April 2021",
+  "startTime":"5:30pm",
+  "endTime": "6:30pm",
+  "link" : "./../assets/images/looker.jpg"
+},
+
+]

@@ -1,0 +1,52 @@
+a:link {
+color: gray;
+}
+a:visited {
+color: green;
+}
+a:hover {
+color: purple;
+}
+a:active {
+color: teal;
+}
+body{
+  background-color: lightblue;
+}
+.center {
+display: block;
+margin: auto;
+}
+
+h1 {
+  padding: 50px;
+color: white;
+font-family: arial, sans-serif;
+font-size: 32px;
+font-weight: bold;
+margin-top: 0px;
+margin-bottom: 1px;
+}
+p {
+  font-size: 120%;
+  color: dimgray;
+}
+
+table{
+  border: 3px solid black;
+}
+th, td{
+  padding: 10px;
+  width:170;
+   border: 1px solid black;
+  background-color:  #F1948A;
+  color: #78281F;
+}
+.unavailable{
+  text-align: center;
+  padding: 10px;
+  width:300px;
+   border: 1px solid black;
+  background-color:  #F1948A;
+  color: #78281F;
+}

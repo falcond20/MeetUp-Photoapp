@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="./../assets/stylesheets/connection.css" rel="stylesheet" type="text/css">
+
+<%- include ('partials/header') %>
+
+
+
+<body>
+
+<div class="events">
+
+  <div class="eventpic">
+    <img src="<%= qs.connection.link %>" alt="">
+</div>
+<h1> <%= qs.connection.connectionName %> </h1>
+
+    <div class="eventdescription">
+      <h2>Venue <%= qs.connection.location %></h2>
+      <ul>
+        <li>Date <%= qs.connection.date %></li>
+        <li>Time:<%= qs.connection.startTime %> to <%= qs.connection.endTime %></li>
+      </ul>
+    </div>
+
+
+
+
+<div class="decision">
+  <p><%= qs.getTopics %></p>
+  <h2>Hosted By: <%= qs.connection.host %> </h2>
+  <h2>Details</h2>
+<h3>
+<%= qs.connection.detail %>
+</h3>
+
+<p>Are you interested in joining us?</p>
+<form  method="post" >
+  <input hidden  name="connectionId" value="<%= qs.connection.connectionId %>">
+  <button type="submit" class="button" value="Yes" formaction="/savedConnections/rsvp" name="rsvp">YES</button>
+      <button type="submit" class="button" value="No" formaction="/savedConnections/delete" name="rsvp">NO</button>
+        <button type="submit" class="button" value="Maybe" formaction="/savedConnections/rsvp" name="rsvp">MAYBE</button>
+</form>
+
+</div>
+
+
+  </div>
+
+
+
+
+<%- include ('partials/footer') %>
+
+</body>
+
+</html>
